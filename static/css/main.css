@@ -8,6 +8,24 @@
         position: fixed;
         top: 0;
     }
+    
+    navbar.minified .navbar-logo {
+        height: 0;
+    }
+
+    navbar.minified div.navbar-logo img {
+        max-height: 0;
+        margin: 0;
+    }
+
+    navbar.minified .navbar-links > ul > li > a {
+        padding: 3.5px;
+        font-size: 14px;
+    }
+
+    navbar.minified #navbar-expand-container {
+        height: 12px;
+    }
 
 }
 
@@ -32,24 +50,6 @@ navbar div.navbar-logo img {
     height: 52px;
     position: absolute;
     transition: height 0.5s;
-}
-
-navbar.minified .navbar-logo {
-    height: 0;
-}
-
-navbar.minified div.navbar-logo img {
-    max-height: 0;
-    margin: 0;
-}
-
-navbar.minified .navbar-links > ul > li > a {
-    padding: 3.5px;
-    font-size: 14px;
-}
-
-navbar.minified #navbar-expand-container {
-    height: 12px;
 }
 
 #page-desc {
