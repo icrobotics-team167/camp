@@ -1,0 +1,86 @@
+@media (min-width: 769px) {
+
+    main {
+        margin-top: 100px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+    }
+
+}
+
+.navbar-logo {
+    height: 52px;
+    transition: height 0.5s;
+}
+
+navbar div.navbar-logo img {
+    max-height: 46px;
+    margin: 3px 0;
+    transition: max-height 0.5s, margin 0.5s;
+}
+
+.navbar-links > ul > li > a {
+    padding: 16.5px;
+    font-size: 16px;
+    transition: background-color 0.6s, color 0.6s, padding 0.5s, font-size 0.5s;
+}
+
+#navbar-expand-container {
+    height: 52px;
+    position: absolute;
+    transition: height 0.5s;
+}
+
+navbar.minified .navbar-logo {
+    height: 0;
+}
+
+navbar.minified div.navbar-logo img {
+    max-height: 0;
+    margin: 0;
+}
+
+navbar.minified .navbar-links > ul > li > a {
+    padding: 3.5px;
+    font-size: 14px;
+}
+
+navbar.minified #navbar-expand-container {
+    height: 12px;
+}
+
+#page-desc {
+    margin: 0; padding: 0;
+    margin-bottom: 36px;
+    font-size: 18px;
+}
+
+#top-btn {
+    width: 48px; height: 48px;
+    position: fixed;
+    padding: 12px;
+    bottom: 39px; right: 16px;
+    background-color: #2196F3;
+    border-radius: 24px;
+    text-align: center;
+    transition: width 0.5s, height 0.5s, padding 0.5s;
+    cursor: pointer;
+}
+
+#top-btn i {
+    font-weight: bold;
+    font-size: 24px;
+    transition: font-size 0.5s;
+}
+
+#top-btn.minified {
+    width: 0; height: 0;
+    padding: 0;
+}
+
+#top-btn.minified i {
+    font-size: 0;
+}
