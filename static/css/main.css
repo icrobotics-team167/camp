@@ -132,6 +132,7 @@ h2.section-header {
 
 #contact-links {
     width: 100%;
+    margin-left: -72px;
 }
 
 #contact-links > a {
