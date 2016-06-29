@@ -4,29 +4,18 @@ $(document).ready(function() {
     var scrollTo = target => $('html, body').animate({scrollTop: target}, 500);
     
     var jWindow = $(window);
-    var navbar = $('navbar');
     var topBtn = $('#top-btn');
     
     var scrollCheck = function(e) {
-        if (jWindow.scrollTop() === 0) {
-            navbar.removeClass('minified');
+        if (jWindow.scrollTop() === 0)
             topBtn.addClass('minified');
-        } else {
-            navbar.addClass('minified');
+        else
             topBtn.removeClass('minified');
-        }
     };
     
     jWindow.scroll(scrollCheck);
     
-    topBtn.click(function() {
-        scrollTo(0);
-    });
-    
-    var main = $('.mainwrap');
-    var lipsum = $('.lipsum');
-    for (var i = 0; i < 9; i++)
-        main.append(lipsum.clone());
+    topBtn.click(() => scrollTo(0));
     
     /**
      * Borrowed bc too lazy to write my own algo
@@ -45,6 +34,15 @@ $(document).ready(function() {
         });
     });
     
+    $('.fp-section').each((i, e) => {
+        var obj = $(e);
+        obj.css('background-color', obj.attr('data-bg'));
+    });
+    
+    var wSizeCheck = () => $('.fp-section').css('height', jWindow.height());
+    jWindow.on('resize orientationChange', wSizeCheck);
+    
+    wSizeCheck();
     scrollCheck();
     
 });
