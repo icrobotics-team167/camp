@@ -24,8 +24,16 @@ a.btn:hover {
 
 .fp-section {
     width: 100%;
-    padding: 72px;
+    padding: 64px;
     position: relative;
+}
+
+@media(max-width: 768px) {
+    
+    .fp-section {
+        padding: 12vw;
+    }
+    
 }
 
 h2.section-header {
@@ -41,21 +49,52 @@ h2.section-header {
     font-size: 28px;
 }
 
+.section-content > p:last-child {
+    margin-bottom: 0;
+}
+
 .section-content > p > small {
     font-family: 'Source Sans Pro', 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 100;
 }
 
+@media(max-width: 768px) {
+    
+    .section-content > p {
+        font-size: 24px;
+    }
+    
+    h2.section-header {
+        font-size: 48px;
+    }
+    
+}
+
 #header-cont {
     margin: auto 0;
+}
+
+#header-cont {
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
 }
 
+@media(max-width: 768px) {
+    
+    #header-cont {
+        width: 86%;
+    }
+    
+}
+
 #header-img {
     margin-bottom: 24px;
+}
+
+#header-img > img {
+    max-width: 100%;
 }
 
 #header-nav > .elem-3 {
@@ -80,10 +119,31 @@ h2.section-header {
 
 #schedule {
     margin-top: -28px;
+    background-color: #68A636;
+    box-shadow: inset 0 1px 12px -4px #2A2A2A;
+}
+
+@media(min-width: 769px) {
+    
+    #schedule {
+        margin-top: -14px; margin-bottom: 36px;
+    }
+    
+}
+
+@media(max-width: 768px) {
+    
+    #schedule {
+        margin-top: 24px;
+        overflow-x: scroll;
+    }
+    
 }
 
 #schedule > div {
     margin-bottom: -18px;
+    padding-left: 12px; padding-right: 12px;
+    white-space: nowrap;
 }
 
 #schedule > div > p {
@@ -132,7 +192,6 @@ h2.section-header {
 
 #contact-links {
     width: 100%;
-    margin-left: -72px;
 }
 
 #contact-links > a {
@@ -153,6 +212,28 @@ h2.section-header {
 
 #contact-links > a:hover > p {
     color: #5D9B2B;
+}
+
+@media (min-width: 769px) {
+    
+    #contact-links {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+    #contact-links {
+        margin-top: 8%;
+    }
+    
+    #contact-links > a {
+        margin-top: 10px;
+    }
+    
 }
 
 #top-btn {

@@ -39,7 +39,7 @@ $(document).ready(function() {
         obj.css('background-color', obj.attr('data-bg'));
     });
     
-    var wSizeCheck = () => $('.fp-section').css('height', jWindow.height());
+    var wSizeCheck = () => $('.fp-section').css('min-height', jWindow.height());
     jWindow.on('resize orientationChange', wSizeCheck);
     
     wSizeCheck();
