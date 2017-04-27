@@ -163,7 +163,7 @@ h2.section-header {
 #register-btn {
     width: 200px;
     position: absolute; display: block;
-    top: 55%; left: 50%;
+    top: 30%; left: 50%;
     padding: 10px;
     transform: translate(-50%, -50%);
     text-align: center;
