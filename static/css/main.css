@@ -160,13 +160,17 @@ h2.section-header {
     font-family: 'Oswald', 'Roboto', sans-serif;
 }
 
-#register-btn {
-    width: 200px;
-    position: absolute; display: block;
-    top: 30%; left: 50%;
-    padding: 10px;
+#register-btn-container {
+    position: absolute;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+#register-btn {
+    width: 200px;
+    display: inline-block;
+    padding: 10px;
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 700;
@@ -180,14 +184,59 @@ h2.section-header {
     vertical-align: middle;
 }
 
-#register-btn:hover > p, #register-btn:hover > i {
+/* Enabled registration button */
+/*#register-btn:hover > p, #register-btn:hover > i {
     color: #68A636;
+}*/
+
+/* Disabled registration button */
+#register-btn {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+#register-btn:hover {
+    background-color: transparent;
+}
+
+#register-btn:hover > p, #register-btn:hover > i {
+    color: #ccc;
 }
 
 #register-btn > i {
     margin-left: 6px;
     font-size: 26px;
     font-weight: 900;
+}
+
+#register-caption, #register-subcaption {
+    padding: 0;
+}
+
+#register-caption {
+    margin-top: 16px;
+    font-size: 16pt;
+}
+
+#register-caption > a {
+    color: #E91E63;
+}
+
+#register-caption > a:hover {
+    color: #F44336;
+}
+
+#register-subcaption {
+    margin-top: 6px;
+    font-size: 12pt;
+}
+
+@media(min-width: 769px) {
+
+    #register-caption, #register-subcaption {
+        white-space: nowrap;
+    }
+
 }
 
 #contact-links {
