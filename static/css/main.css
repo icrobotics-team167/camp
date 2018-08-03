@@ -252,6 +252,7 @@ body {
     display: block;
     border-radius: 50%;
     border: 6px solid #fff;
+    cursor: pointer;
 }
 
 #register-btn:hover {
