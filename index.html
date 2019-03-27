@@ -75,7 +75,7 @@
                         <h2 class="section-header">ABOUT</h2>
                         <div class="section-content">
                             <p>The Iowa City Robotics programming summer camp introduces students to fundamental computer science concepts. Students will learn to apply problem-solving skills to overcome programming challenges and eventually create simple text-based games.</p>
-                            <p>The activities offered in this camp program will cover much of the curriculum taught in the AP Computer Science course taught at the high-school level. Students participating in this camp will have the opportunity to gain some early exposure to these concepts in preparation for AP Computer Science should they choose to take that course later.</p>
+                            <p>The activities offered in this camp will cover many of the same concepts present in the AP Computer Science course taught at the high-school level. Students participating in this camp will have the opportunity to gain some early exposure to these concepts in preparation for AP Computer Science should they choose to take that course later.</p>
                             <p>Students aren't expected to have any prior experience with programming or discrete mathematics, but students that <i>do</i> have prior experience are also encouraged to take part in the camp. Computers and other equipment will be supplied by the team.</p>
                         </div>
                     </div>
@@ -88,13 +88,13 @@
                                     <p>9:00AM</p><p>9:30AM</p><p class="event">DROP-OFF</p>
                                 </div>
                                 <div>
-                                    <p>9:30AM</p><p>12:00PM</p><p class="event">PROGRAMMING MAGIC</p>
+                                    <p>9:30AM</p><p>12:00PM</p><p class="event">PYTHON PROGRAMMING</p>
                                 </div>
                                 <div>
                                     <p>12:00PM</p><p>12:30PM</p><p class="event">LUNCH</p>
                                 </div>
                                 <div>
-                                    <p>12:30PM</p><p>3:00PM</p><p class="event">PROGRAMMING MAGIC</p>
+                                    <p>12:30PM</p><p>3:00PM</p><p class="event">PYTHON PROGRAMMING</p>
                                 </div>
                                 <div>
                                     <p>3:00PM</p><p>5:00PM</p><p class="event">LATE STAY PROGRAM</p>
@@ -120,7 +120,7 @@
             </div>
             <footer>
                 <div>
-                    <p><small>&copy; Iowa City Robotics, 2018</small></p>
+                    <p><small id="copyright">© 2019 Iowa City Robotics</small></p>
                 </div>
                 <div id="contact-links">
                     <a class="contact-link" href="mailto:iowacityrobotics167@gmail.com" target="_blank" rel="noopener">
@@ -139,5 +139,8 @@
             </footer>
         </div>
         <script src="static/js/main.js" charset="utf-8"></script>
+        <script>
+            document.getElementById('copyright').innerHTML = `© ${new Date().getFullYear()} Iowa City Robotics`;
+        </script>
     </body>
 </html>
