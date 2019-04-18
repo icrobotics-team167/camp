@@ -18,7 +18,7 @@ const ePageLeft = document.getElementById('page-left');
 const ePageRight = document.getElementById('page-right');
 function showL() {
   activate();
-  eHeadText.innerHTML = 'LEGO<sup>\u00ae</sup> Robotics';
+  eHeadText.innerHTML = 'LEGO\u00ae Robotics';
   eNavLeft.classList.remove('active');
   eNavRight.classList.add('active');
   eSwapper.style.left = '0';
@@ -28,7 +28,7 @@ function showL() {
 
 function showR() {
   activate();
-  eHeadText.innerText = 'Programming';
+  eHeadText.innerText = 'Python Programming';
   eNavLeft.classList.add('active');
   eNavRight.classList.remove('active');
   eSwapper.style.left = '-100vw';
