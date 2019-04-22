@@ -236,6 +236,24 @@ body {
     font-family: 'Oswald', 'Roboto', sans-serif;
 }
 
+#contact-email-left {
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: underline;
+}
+
+#contact-email-right {
+    color: rgba(255, 255, 255, 0.87);
+    text-decoration: underline;
+}
+
+#contact-email-left:hover {
+    color: #cccccc;
+}
+
+#contact-email-right:hover {
+    color: #aaaaaa;
+}
+
 #schedule-right > div > p.event {
     color: #9E9E9E;
 }
