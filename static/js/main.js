@@ -40,3 +40,9 @@ document.getElementById('header-left').onclick = showL;
 document.getElementById('nav-left').onclick = showL;
 document.getElementById('header-right').onclick = showR;
 document.getElementById('nav-right').onclick = showR;
+
+window.onscroll = event => {
+  if (!init) {
+    showL();
+  }
+};
