@@ -56,4 +56,4 @@ const bounce = () => {
   sleep(2200).then(bounce);
 };
 
-bounce();
+sleep(1000).then(bounce);
