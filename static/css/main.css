@@ -175,11 +175,11 @@ body {
 }
 
 #header-left {
-    background-image: url("../img/header-left.jpg");
+    background-image: url("/static/img/header-left.JPG");
 }
 
 #header-right {
-    background-image: url("../img/header-right.jpg");
+    background-image: url("/static/img/header-right.JPG");
 }
 
 .fp-section {
