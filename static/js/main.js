@@ -46,3 +46,14 @@ window.onscroll = event => {
     showL();
   }
 };
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+const bounce = () => {
+  $("#scroll-note").effect("bounce", { times: 3 }, 500);
+  sleep(2200).then(bounce);
+};
+
+bounce();

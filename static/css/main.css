@@ -115,6 +115,18 @@ body {
     text-align: center;
 }
 
+#scroll-note {
+    bottom: 10px;
+    display: inline-block;
+    font-family: 'Oswald', 'Impact', 'Helvetica', 'Arial', sans-serif;
+    font-size: 24pt;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 0 12px #000;
+    width: 100%;
+}
+
 #swap-wrapper {
     position: relative;
     left: -50vw;
@@ -163,11 +175,11 @@ body {
 }
 
 #header-left {
-    background-image: url("/static/img/header-left.JPG");
+    background-image: url("../img/header-left.jpg");
 }
 
 #header-right {
-    background-image: url("/static/img/header-right.JPG");
+    background-image: url("../img/header-right.jpg");
 }
 
 .fp-section {
