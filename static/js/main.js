@@ -41,8 +41,8 @@ document.getElementById('nav-left').onclick = showL;
 document.getElementById('header-right').onclick = showR;
 document.getElementById('nav-right').onclick = showR;
 
-window.onscroll = event => {
-  if (!init) {
+window.onwheel = event => {
+  if (!init && event.deltaY > 0) {
     showL();
   }
 };
