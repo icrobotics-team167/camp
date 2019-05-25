@@ -46,3 +46,37 @@ window.onwheel = event => {
     showL();
   }
 };
+
+// Detect gestures on mobile since window.onwheel doesn't work
+const wrapper = document.getElementById('wrapper');
+let touchStartX = 0;
+let touchStartY = 0;
+let touchEndX = 0;
+let touchEndY = 0;
+
+wrapper.addEventListener('touchstart', event => {
+  touchStartX = event.changedTouches[0].screenX;
+  touchStartY = event.changedTouches[0].screenY;
+}, false);
+wrapper.addEventListener('touchend', event => {
+  touchEndX = event.changedTouches[0].screenX;
+  touchEndY = event.changedTouches[0].screenY;
+  handleGesture();
+}, false);
+
+const {width, height} = wrapper.getBoundingClientRect();
+function handleGesture() {
+  const deltaX = touchEndX - touchStartX;
+  const deltaY = touchEndY - touchStartY;
+  const ratioX = deltaX / width;
+  const ratioY = deltaY / height;
+
+  if (deltaX > deltaY && ratioX > 0.1 && !init) { // Right
+    showL();
+  } else if (deltaY > deltaX && ratioY > 0.1) { // Down
+  } else if (deltaX < deltaY && ratioX < -0.1 && !init) { // Left
+    showR();
+  } else if (deltaY < deltaX && ratioY < -0.1 && !init) { // Up
+    showL()
+  }
+}
