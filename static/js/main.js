@@ -82,4 +82,3 @@ function handleGesture() {
 }
 
 document.getElementById('copyright').innerHTML = `© ${new Date().getFullYear()} Iowa City Robotics`;
-alert('Attention!\n\nJunior Bots 2020 has been canceled due to the COVID-19 pandemic. Scroll down to join our email list for next year!');
